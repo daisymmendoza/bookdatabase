@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Search Book</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <%- include('partials/nav') -%>
+
+    <h2 class="pageHeader">Search Book</h2>
+
+    <!-- Search section -->
+    <div class="container">
+        <!-- Search bar -->
+        <form action="/searchdb" method="GET">
+            <input type="text" name="name" placeholder="Book Name" autocomplete="off">
+            <button type="submit" class="enterBtn">Search in Database</button>
+        </form>
+
+        <!-- Search results -->
+        <% if(item) { %>
+            <br>
+            <h3 id="searchHead">Search Results:</h3>
+            <ul class="searchBook showBooks">
+                <li><%= item.name %></li>
+                <li><%= item.author %></li>
+                <li><%= item.genre %></li>
+                <li><%= item.release %></li>
+                <li><%= item.language %></li>
+                <li><%= item.level %></li>
+            <ul>
+        <% } else if(item != ''){ %>
+            <br>
+            <div class="searchNone">Book does not exist with this name.</div>
+        <% } %>
+    </div>
+</body>
+</html>

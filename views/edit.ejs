@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Edit Book Data</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <%- include('partials/nav') -%>
+    
+    <!-- Edit form -->
+    <h2 class="pageHeader"> Edit Book Data</h2>
+    <div class="container">
+        <form method ="post" action ="/show/<%= items._id %>?_method=PUT">
+            <!-- Box around form -->
+            <fieldset>
+                <!-- Title in box -->
+                <legend>Book Entry</legend>
+
+                <!-- Book name -->
+                <label>Book Name</label>
+                <input type="text" name="name" placeholder="Book Name"  value="<%= items.name%>" autocomplete="off">
+                
+                <br>
+
+                <!-- Book author -->
+                <label>Author</label>
+                <input type="text" name="author" placeholder="Author"  value="<%= items.author%>" autocomplete="off">
+
+                <br>
+
+                <!-- Book genre -->
+                <label>Genre</label>
+                <input type="text" name="genre" placeholder="Genre"  value="<%= items.genre%>" autocomplete="off">
+
+                <br>
+
+                <!-- Book release date/year -->
+                <label>Released In</label>
+                <input type="text" name="release" placeholder="Year"  value="<%= items.release%>" autocomplete="off">
+
+                <br>
+
+                <!-- Book language -->
+                <label>Language</label>
+                <input type="text" name="language" placeholder="Language"  value="<%= items.language%>" autocomplete="off">
+                
+                <br>
+
+                <!-- Book reading level -->
+                <label>Reading Level</label>
+                <input type="text" name="level" placeholder="Reading Level"  value="<%= items.level%>" autocomplete="off">
+
+                <br>
+                <br>
+
+                <!-- Submission button -->
+                <button class="enterBtn">Enter</button>
+            </fieldset>        
+        </form>
+    </div>
+</body>
+</html>

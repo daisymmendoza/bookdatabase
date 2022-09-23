@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Book Database</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <%- include('partials/nav') -%>
+
+    <!-- Book database header -->
+    <h2 class="pageHeader">Book Database</h2>
+        <ul>
+            <!-- Show books in database -->
+            <div class="mainContainer">
+            <% for (let item of items) { %>
+                <div class="showContainer showBooks">
+                    <li><%= item.name %></li>
+                    <li><%= item.author %></li>
+                    <li><%= item.genre %></li>
+                    <li><%= item.release %></li>
+                    <li><%= item.language %></li>
+                    <li><%= item.level %></li>
+                    
+                    <div class="showBtns">
+                        <!-- Edit button -->
+                        <button id="editBtn">
+                            <a href="/show/<%= item._id%>/edit" id="editLink">Edit</a> 
+                        </button>
+
+                        <!-- Delete button -->
+                        <form action="/show/<%= item._id%>?_method=DELETE" method="post">
+                            <button id="deleteBtn">Delete</button>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+            <%} %>
+            </div>
+        </ul>
+</body>
+</html>

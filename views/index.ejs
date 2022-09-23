@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Book Entry Form</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <%- include('partials/nav') -%>
+
+    <h2 class="pageHeader">Enter Book</h2>
+
+    <!-- Book Form -->
+    <div class="container">
+        <form action="/" method="post">
+            <!-- Box around form -->
+            <fieldset>
+                <!-- Title inside box -->
+                <legend>Book Entry</legend>
+
+                <!-- Book name -->
+                <label>Book Name</label>
+                <input type="text" name="name" placeholder="Book Name" autocomplete="off">
+                
+                <br>
+
+                <!-- Book author -->
+                <label>Author</label>
+                <input type="text" name="author" placeholder="Author" autocomplete="off">
+
+                <br>
+
+                <!-- Book genre -->
+                <label>Genre</label>
+                <input type="text" name="genre" placeholder="Genre" autocomplete="off">
+
+                <br>
+
+                <!-- Book release date/year -->
+                <label>Released In</label>
+                <input type="text" name="release" placeholder="Year" autocomplete="off">
+
+                <br>
+
+                <!-- Book language -->
+                <label>Language</label>
+                <input type="text" name="language" placeholder="Language" autocomplete="off">
+                
+                <br>
+
+                <!-- Book reading level -->
+                <label>Reading Level</label>
+                <input type="text" name="level" placeholder="Reading Level" autocomplete="off">
+
+                <br>
+                <br>
+
+                <!-- Submission button -->
+                <button class="enterBtn">Enter</button>
+            </fieldset>        
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+/* Color Scheme
+#c9b9ad light brown
+#3d220f brown
+#7a7a64 green
+*/
+
+* {
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body {
+    background: #7a7a64;
+    color: #3d220f;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: #3d220f;
+    margin: -8px -8px 30px -8px;
+    padding: 17px;
+}
+
+/* Navbar items */
+.navbar a {
+    color: #ddd4cd;
+    text-decoration: none;
+}
+
+/* Navbar header */
+.navHead {
+    font-size: 1.4em;
+}
+
+/* Navbar search item */
+.navSearch {
+    margin-top: 2px;
+    font-size: 1.1em;
+}
+
+.navSearch a:hover {
+    color: #c9b9ad;
+}
+
+/* Index.ejs header */
+.pageHeader {
+    text-align: center;
+    color: #3d220f;
+}
+
+/* Index.ejs book form container */
+.container {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #c9b9ad;
+    padding: 20px;
+    border: none;
+    border-radius: 7px;
+}
+
+fieldset {
+    border: solid #3d220f;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+/* Book form input formatting */
+input[type=text], select {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #3d220f;
+    font-size: 1.1em;
+    color: #3d220f;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: #c9b9ad;
+}
+
+/* Index book form button */
+.enterBtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+    background-color: #7a7a64;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.enterBtn:hover {
+    background-color: #6b6b55;
+    cursor: pointer;
+}
+
+/* Submit.ejs message container */
+.submitContainer {
+    width: 40%;
+    background-color: #c9b9ad;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Submit.ejs message header */
+#submitHead {
+    margin-top: 0;
+    color: #3d220f;
+}
+
+/* Submit.ejs message */
+#submitMessage {
+    font-size: 1.1em;
+    color: #3d220f;
+}
+
+/* Submit.ejs link to index.ejs */
+#formLink {
+    color: #7a7a64;
+}
+
+/* Show.ejs book container */
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-left: 50%;
+    margin-right: 50%; */
+}
+
+/* Show.ejs book list container */
+.showContainer {
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    padding: 15px;
+    background-color: #c9b9ad;
+    color: #3d220f;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+/* Show.ejs book list */
+.showBooks {
+    font-size: 1.1em;
+}
+
+/* Search.ejs header */
+#searchHead {
+    margin-top: 10px;
+}
+
+/* Search.ejs book list */
+.searchBook {
+    margin-left: -40px;
+    margin-top: -10px;
+}
+
+/* Search.ejs book not found message */
+.searchNone {
+    margin-top: 10px;
+}
+
+/* Show.ejs button container */
+.showBtns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 7px;
+    margin-bottom: -10px;
+}
+
+/* Show.ejs edit button/link */
+#editLink {
+    text-decoration: none;
+    color: white;
+}
+
+/* Show.ejs edit button */
+#editBtn {
+    padding: 7px;
+    background-color: #7a7a64;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#editBtn:hover {
+    background-color: #6b6b55;
+    cursor: pointer;
+}
+
+/* Show.ejs delete button */
+#deleteBtn {
+    padding: 7px;
+    background-color: #7a7a64;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deleteBtn:hover {
+    background-color: #6b6b55;
+    cursor: pointer;
+}
+
+/*
+Pride and Prejudice
+Jane Austen
+Romance
+1813
+English
+Advanced
+
+The Picture of Dorian Gray
+Oscar Wilde
+Fiction
+1890
+English
+Advanced
+
+Heartless
+Marissa Meyer
+Fiction
+2016
+English
+Intermediate
+
+Facts About the Moon
+Dorianne Laux
+Poetry
+2006
+English
+Intermediate
+
+Twilight
+Stephenie Meyer
+Romance
+2005
+English
+Intermediate
+
+Sample Book
+Author
+Fantasy
+2001
+English
+Beginner
+*/
